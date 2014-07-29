@@ -21,8 +21,13 @@ def calculator (input)
       new_arr << word
     end
   end
+  # result = new_arr[0].send(new_arr[1],new_arr[2])
+  # p result
 
-  p new_arr
+  result = new_arr.join()
+  answer = eval(result)
+
+  p answer
 end
 
 puts calculator("What is 20 minus 10?")
